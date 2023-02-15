@@ -1,0 +1,320 @@
+*{
+    margin: 0;}      
+html{
+    scroll-behavior: smooth;}      
+body{
+    background-color: rgb(184, 223, 250);
+    display: block;}
+html,body{
+    height: 100%;}     
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);}
+img{
+    max-width: 100%;
+    height: auto;}    
+button,input{
+    border: none;
+    outline: none;}      
+button{
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);}
+#container{
+    min-height: 100%;
+    padding-bottom: 250px;
+}
+
+/*     */
+        /*main*//*  Top Bar  */
+.nav-main{
+    position: sticky;
+    top: 0;
+    margin-bottom: 20PX;
+    border-width: thin medium thick 10px;}
+.top-bar{
+    background-color: #47c9e0;
+    display: grid;
+    grid-template-columns: .5fr 7fr 1fr ;
+    border-radius: 20PX;
+    border-color: aquamarine;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;}
+.top-middle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.top-right{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 60px 60px 90px;}
+.top-grid1{
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.top-grid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c3d8ff;
+    text-align: center;}
+.top-grid3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;}
+.top-grid1:hover{
+    border: 1px solid rgb(38, 90, 135);
+    margin: 0;
+    padding: 0;
+    opacity: 70%;}
+.top-grid2:hover{
+    border: 1px solid rgb(50, 108, 158);
+    opacity: 70%;}
+.top-grid3:hover{
+    border: 1px solid rgb(67, 129, 183);
+    opacity: 70%;}
+.top-grid1:active{
+    background-color: blue;}
+.top-grid3:active{
+background-color: blue;}
+        /*main*//*  Bio */
+/*  Bio1 is none a.t.m.  */
+
+
+/* arrow  */
+.transition-1{
+    width: min(90%, 4rem);
+    margin-inline: auto;
+    padding: 0;
+    background-color: rgb(195, 255, 255);
+    border-radius: 10px;
+    border: 4px solid aqua;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;}
+.transition-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+
+/*   Bio 2  */
+
+
+
+
+.bio2{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgb(195, 255, 255);
+    width: min(90%, 60.5rem);
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 4px solid aqua;
+    transition: 500ms;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows:  1fr 2fr 1fr 2fr ;
+    grid-gap: 2em;}
+.bio2-2{
+    background-color: #89f8fc;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    font-family: 'Mr Dafoe';
+    font-style: normal;}
+.bio2-3{
+    background-color: rgb(164, 247, 247);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-3);
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    overscroll-behavior-inline: contain ;}
+.snaps-inline {
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);} 
+.snaps-inline > * {
+    scroll-snap-align: center;}
+.bio2-4{
+    background-color: #89f8fc;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+    font-family: 'Mr Dafoe';
+    font-style: normal;}
+.bio2-5{
+    background-color: rgb(164, 247, 247);
+    display: grid;
+    grid-auto-flow: column;
+    gap: var(--size-3);
+    grid-auto-columns: auto;
+    overflow-x: auto;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 0;
+    text-align: center;
+    overscroll-behavior-inline: contain ;}
+.bio2-6{
+    background-color: rgb(252, 134, 134);
+    height: 37.5px;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+    
+    /*   Bio 3  */
+.bio3{
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: rgb(195, 255, 255);
+    width: min(90%, 60.5rem);
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 4px solid aqua;
+    transition: 500ms;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-rows: 40px 70px 70px 70px 70px 70px 70px ;}
+.bio3-1{
+    margin: 10px;
+    text-align: center;}
+.bio3-2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    margin-right: 40vw;
+    padding: 5px 10px 5px 10px;
+    background-color: #89f8fc;
+    text-align: center;
+    border-radius: 40px;
+    font-family: 'Lobster', cursive;}
+.bio3-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 40px;
+    padding: 5px 0px 5px 0px;
+    background-color: #89f8fc;
+    
+    border-radius: 40px;
+    font-family: 'Grandstander', cursive;
+    font-size: large;
+    font-weight: 600;}
+.bio3-4{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    margin-right: 40vw;
+    padding: 5px 10px 5px 10px;
+    background-color: #89f8fc;
+    text-align: center;
+    border-radius: 40px;
+    font-family: 'Lobster', cursive;}
+.bio3-5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 40px;
+    padding: 5px 0px 5px 0px;
+    background-color: #89f8fc;
+    
+    border-radius: 40px;
+    font-family: 'Grandstander', cursive;
+    font-size: large;
+    font-weight: 600;}
+.bio3-6{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    margin-right: 40vw;
+    padding: 5px 10px 5px 10px;
+    background-color: #89f8fc;
+    text-align: center;
+    border-radius: 40px;
+    font-family: 'Lobster', cursive;}
+.bio3-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0 15px 40px;
+    padding: 5px 0px 5px 0px;
+    background-color: #89f8fc;
+    
+    border-radius: 40px;
+    font-family: 'Grandstander', cursive;
+    font-size: large;
+    font-weight: 600;}
+.light:hover{
+    transition: 500ms;
+    box-shadow: 0px 0px 70px rgb(107, 225, 255);
+}
+
+
+    /*main*//*foot*/
+
+.contacts{
+    background-color: aquamarine;
+    position: relative;
+    opacity: 100%;
+    height: 150px;
+    margin-top: -150px;
+    text-align: center;}
+.end-title{
+    font-family: 'Mr Dafoe', cursive;}
+.social-icon{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.fa-twitter{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}
+.fa-facebook{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #349983;
+    border-radius: 20px;}
+.fa-instagram{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}
+.fa-youtube{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}
+

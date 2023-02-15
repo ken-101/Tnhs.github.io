@@ -1,0 +1,194 @@
+*{
+    margin: 0;}      
+html{
+    scroll-behavior: smooth;}      
+body{
+    background-color: rgb(184, 223, 250);
+    display: block;}
+html,body{
+    height: 100%;}     
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);}
+img{
+    max-width: 100%;
+    height: auto;}    
+button,input{
+    border: none;
+    outline: none;}      
+button{
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);}
+    
+#container{
+    min-height: 100%;
+    padding-bottom: 250px;}
+
+.nav-main{
+    position: sticky;
+    top: 0;
+    margin-bottom: 20PX;
+    border-width: thin medium thick 10px;}
+.top-bar{
+    background-color: #47c9e0;
+    display: grid;
+    grid-template-columns: .5fr 7fr 1fr ;
+    border-radius: 20PX;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;}
+.top-middle{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.top-right{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 60px 60px 90px;}
+.top-grid1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;}
+.top-grid2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+.top-grid3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #c3d8ff;
+    margin-right: 10px;}
+.top-grid1:hover{
+    border: 1px solid rgb(38, 90, 135);
+    margin: 0;
+    padding: 0;
+    opacity: 70%;}
+.top-grid2:hover{
+    border: 1px solid rgb(50, 108, 158);
+    opacity: 70%;}
+.top-grid3:hover{
+    border: 1px solid rgb(67, 129, 183);
+    opacity: 70%;}
+.top-grid1:active{
+    background-color: blue;}
+.top-grid1:active{
+    background-color: blue;}
+.top-grid2:active{
+    background-color: blue;}
+
+.container-1{
+    padding: 3em;
+    display: grid;
+    justify-content: center;
+    grid-gap: 2em;}
+.contact-1{
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+    background-color: rgb(195, 255, 255);
+    width: min(75%, 20.5rem);
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 4px solid aqua;
+    transition: 500ms;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);}
+.message-1{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+    justify-items: center;}
+.message-icon{
+    display: grid;
+    justify-items: center;
+    padding-top: 20px;
+    padding: 0 1fr 0 1fr;
+    grid-template-columns: 1fr 70px 70px 70px 70px 1fr;}
+.fa-twitter1{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(113, 234, 255);
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+    border-radius: 10px;}
+.fa-facebook1{
+    padding: 10px 13px 10px 13px;
+    background-color: rgb(104, 157, 255);
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+    border-radius: 10px;}
+.fa-instagram1{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(243, 115, 255);
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+    border-radius: 10px;}
+.fa-youtube1{
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(255, 103, 103);
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+    border-radius: 10px;}
+.light:hover{
+    transition: 500ms;
+    box-shadow: 0px 0px 70px rgb(107, 225, 255);
+}
+.opacity:hover{
+    opacity: 70%;
+}
+
+#footer{
+    background-color: aquamarine;
+    position: relative;
+    opacity: 100%;
+    height: 150px;
+    margin-top: -150px;
+    text-align: center;}
+.end-title{
+    font-family: 'Mr Dafoe', cursive;}
+.social-icon{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.icont{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}
+.iconf{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 8px 5px 8px;
+    border: 1px solid #349983;
+    border-radius: 20px;}
+.iconi{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}
+.icony{
+    color: black;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-right: 25px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #349983;
+    border-radius: 13px;}

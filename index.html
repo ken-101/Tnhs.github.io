@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -19,4 +20,39 @@
   </footer>
   <script src="script.js"></script>
 </body>
+=======
+<html>
+  <head>
+    <script src="todo.js"></script>
+    <style>
+      .todo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .todo-item {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+      .todo-text {
+        padding: 10px;
+      }
+      .todo-remove {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-container">
+      <div id="todo-list"></div>
+      <input type="text" id="todo-input">
+      <button id="todo-add">Add</button>
+    </div>
+  </body>
+>>>>>>> 205d1c2a080a37dd8788a78b0a32b84d0a6700c4
 </html>
