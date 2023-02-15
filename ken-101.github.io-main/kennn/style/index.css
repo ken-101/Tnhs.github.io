@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
 
 :root {
-  --background: #fd2424d9;
+  --background: #dc0000e0;
 }
 
 *, *::before, *::after {
@@ -274,8 +274,25 @@ nav a:hover {
     padding: 0;
   }
   /* madia (pc) about us style end */
+  
 }
+.look{
+  display: flex;
+  background-color:  #80f7863b;
+  backdrop-filter: blur(9px);
 
+  padding: 5px 10px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 20%;
+  /* top: 52.4%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fdf0ff;
+  }
 
 
 .container{
