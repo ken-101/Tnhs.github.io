@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+  --primary-color: #f60f20;
+  --secondary-color: #1b206e;
+}
+
+/* BASE STYLES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+html, body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 200vh;
+  overflow:auto;}
+h1 {
+  font-size: 30px;
+  font-weight: 500;}
+p {
+  margin: 20px 0 10px;
+  font-size: 1.1rem;}
+/* Button */
+  .btn{
+    background-color: #ff5967a6;
+    border-radius: 4px;
+    padding: 0 4px;}
+  .btn:hover{
+    background-color: #ff5967;}
+/* NAV BAR */
+header{
+  background: #ff4242;;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: calc(60% - 400px) calc(25% - 0px) 1fr;
+  padding: 10px 5px;}
+.logospace {
+  display: flex;
+  justify-content: center;
+  z-index: 20;}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  background-color: #252525;
+  border-radius: 100%;}
+.tnhs{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  font-weight: 600;
+  color: #252525;}
+.tnhs:hover{
+  opacity: 70%;}
+.cent{
+  display: flex;
+  justify-content: right;}
+
+
+  @media (max-width: 1300px){
+  header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr .8fr;
+    padding: 10px 30px;}
+  .logo{
+    width: 70px;}
+  .tnhs{
+    font-size: 40px;}
+  .down{
+    display: grid;
+    grid-template-rows: 1fr 1fr;}
+  .toggle {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    background: var(--primary-color) url(../images/menu.png);
+    background-size: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 20;
+    cursor: pointer;}
+  .toggle.active {
+    background: var(--primary-color) url(../images/close.png);
+    background-size: 25px;
+    background-position: center;
+    background-repeat: no-repeat;}
+  .down {
+   display: none;}
+  .op:focus-within .down {
+    display: block;}
+  .navigation {
+    position: fixed;
+    top: 90px;
+    left: 120%;
+    width: 50%;
+    height: 70%;
+    background-color: rgb(201, 26, 26);
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: 2;
+    transition: 0.4s;}
+  .navigation.active {
+    left: 50%;}
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;}
+  .navigation ul li a {
+    display: block;
+    font-weight: 800;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;}
+  ul li ul {
+    background: inherit;
+    visibility: hidden;
+    opacity: 0;
+    background-color: #ff4242;
+    gap: 20px; 
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    display: none;
+    background-color: #fd2424d9;}
+   /* Show submenu on hover and focus */
+   ul li:hover > ul, ul li:focus > ul, ul li ul:hover, ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;}
+   ul {
+    display: flex;}
+}
+li:hover,
+li:focus-within {
+cursor: pointer;}
+li:focus-within a {
+outline: none;}   
+.navigation ul li {
+  list-style: none;
+  text-align: center;}
+.navigation ul{
+  align-items: center;}
+.btn, .navigation ul li a {
+  font-weight: 800;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 500;}
+.navigation ul li a:hover {
+  color: var(--primary-color);}
+  
+@media (min-width: 1300px) {
+  .navigation ul{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 40px;}
+  .cent{
+    margin: 0 50px 0 0;}
+  .sad{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:30px 10px 20px 10px;}
+   ul li ul {
+    background: inherit;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 90px;
+    right: 218px;
+    background-color: #ff4242;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;}
+   /* Show dropdown on hover and focus */
+   ul li:hover > ul, ul li:focus > ul, ul li ul:hover, ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: flex;}
+   ul {
+    display: flex;}
+   li:hover, li:focus-within {
+    cursor: pointer;}
+   li:focus-within a {
+    outline: none;}
+   header a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: black;
+    position: absolute;
+    top: -.75em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
